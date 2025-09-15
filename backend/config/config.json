@@ -14,7 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "process.env.DB_USER",
+    "username": "uev6jpsjoejixghl",
     "password": "bw1Qb4NilCPVUXUPYVVJ",
     "database": "bickkwvp7jirayj208tn",
     "host": "bickkwvp7jirayj208tn-mysql.services.clever-cloud.com",
