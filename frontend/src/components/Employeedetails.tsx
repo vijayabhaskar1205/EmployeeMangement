@@ -215,7 +215,7 @@ const Employeedetails = () => {
                     <form onSubmit={handleconfirm}>
                         <div className="mt-4" >
 
-                            <input type="file" className="hidden" required id="image" onChange={handleImageChange} />
+                            <input type="file" className="hidden"  id="image" onChange={handleImageChange} />
                             <label
                                 htmlFor="image"
                                 className="w-32 h-32 border rounded-2xl flex justify-center items-center cursor-pointer overflow-hidden"
