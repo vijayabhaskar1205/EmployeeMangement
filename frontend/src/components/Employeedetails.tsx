@@ -139,7 +139,11 @@ const Employeedetails = () => {
     })
     const handleconfirm = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-
+        console.log(image)
+           if (!image) {
+        alert("Please select an image before confirming!");
+        return;
+    }
         const formdata = new FormData()
         formdata.append('name', name)
         formdata.append('employeeid', employeeid)
