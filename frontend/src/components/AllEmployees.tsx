@@ -36,12 +36,12 @@ const AllEmployees = () => {
   };
 
   const handleGet = async () => {
-    const res = await axios.get("http://localhost:7500/employee/getall");
+    const res = await axios.get("https://employeemangement-radical.onrender.com/employee/getall");
     return res.data;
   };
 
   const handleDelete = async (id: string) => {
-    const result = await axios.delete(`http://localhost:7500/employee/delete/${id}`);
+    const result = await axios.delete(`https://employeemangement-radical.onrender.com/employee/delete/${id}`);
     return result.data;
   };
 
@@ -166,7 +166,7 @@ const AllEmployees = () => {
                     <tr key={emp.id}>
                       <td className="px-4 py-2 flex items-center space-x-4">
                         <img
-                          src={`http://localhost:7500/${emp.image}`}
+                          src={`https://employeemangement-radical.onrender.com/${emp.image}`}
                           className="w-10 h-10 rounded-full"
                         />
                         <span>{emp.name}</span>

@@ -71,7 +71,7 @@ const Show = () => {
                     </div>
                       <div className="flex items-center mt-6 mb-6">
               <img
-                src={`http://localhost:7500/${employee.image}`}
+                src={`https://employeemangement-radical.onrender.com/${employee.image}`}
                
                 className="w-20 h-20  object-cover mr-6"
               />

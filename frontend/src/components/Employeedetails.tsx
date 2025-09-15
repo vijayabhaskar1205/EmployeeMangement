@@ -39,7 +39,7 @@ const Employeedetails = () => {
         if (editwork) {
 
             if (editwork.image) {
-                setPreview(`http://localhost:7500/${editwork.image}`);
+                setPreview(`https://employeemangement-radical.onrender.com/${editwork.image}`);
             } else {
                 setPreview(null);
             }
@@ -87,7 +87,7 @@ const Employeedetails = () => {
 
     const editmutate = useMutation({
         mutationFn: async (formdata: FormData) => {
-            const employeedetailsedit = await axios.put("http://localhost:7500/employee/employeeedit", formdata, {
+            const employeedetailsedit = await axios.put("https://employeemangement-radical.onrender.com/employee/employeeedit", formdata, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -120,7 +120,7 @@ const Employeedetails = () => {
     const queryClient = useQueryClient();
     const emppostmutation = useMutation({
         mutationFn: async (formdata: FormData) => {
-            const employeedetailspost = await axios.post("http://localhost:7500/employee/employeepost", formdata, {
+            const employeedetailspost = await axios.post("https://employeemangement-radical.onrender.com/employee/employeepost", formdata, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
