@@ -52,14 +52,16 @@
 
     }
 
-    const employeeget=async(req,res)=>{
-        const ress=await employemodel.findAll()
-        res.json(
-            ress
-        )
-        console.log(ress)
-
-    }
+   const employeeget = async (req, res) => {
+  try {
+    const ress = await employemodel.findAll();
+    res.status(200).json(ress);
+    console.log(ress);
+  } catch (err) {
+    console.error("Error fetching employees:", err);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
 
     const empedit=async(req,res)=>{
        try {
