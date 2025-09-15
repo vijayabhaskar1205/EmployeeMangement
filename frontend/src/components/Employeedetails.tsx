@@ -93,11 +93,11 @@ const Employeedetails = () => {
                 }
             })
             try {
-                alert(employeedetailsedit.data.message)
+                
                 navigate('/')
             }
             catch (err) {
-                alert("errorn in employeedetailspost")
+                alert("errorn in employeedetailspost"+employeedetailsedit)
             }
         },
         onSuccess: () => {
@@ -126,10 +126,10 @@ const Employeedetails = () => {
                 }
             })
             try {
-                alert(employeedetailspost.data.message)
+                console.log("ok")
             }
             catch (err) {
-                alert("errorn in employeedetailspost")
+                alert("errorn in employeedetailspost"+employeedetailspost)
             }
         },
         onSuccess: () => {
